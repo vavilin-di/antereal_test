@@ -1,0 +1,9 @@
+.git
+.vscode
+.venv
+__pycache__/
+*.py[cod]
+*$py.class
+.git-credentials
+*.code-workspace
+.DS_Store
