@@ -20,7 +20,7 @@
   * Python 3.9.5;
   * PyQT5 5.15.7 (Qt 5.12.12).
 ### Установка и запуск:
-    pip -r requirements.txt
+    pip install -r requirements.txt
     python main.py
 
 ### Для примера создан файл test.txt
