@@ -77,8 +77,10 @@ class Window(QWidget):
     def remove_shape(self):
         """Remove shape from coordinates_handler and rendered item from map
         """
-        self.coordinates_handler.remove_shape(id=id(self.map_area.get_focused_shape()))
-        self.map_area.remove_focused_item()
+        focused_shape = self.map_area.get_focused_shape()
+        if focused_shape is not None:
+            self.coordinates_handler.remove_shape(id=id(self.map_area.get_focused_shape()))
+            self.map_area.remove_focused_item()
 
     def save_coords_file(self):
         """Clear status list only (not the widget) save coords to file and update status
